@@ -1,0 +1,11 @@
+section article img {
+  width: 150px;
+}
+
+section article {
+  width: 300px;
+}
+
+section {
+    display: flex;
+}
