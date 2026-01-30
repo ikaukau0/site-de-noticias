@@ -21,6 +21,7 @@ header {
 }
 
 header nav a:first-child {
+
   color: #999999;
 }
 
@@ -35,34 +36,14 @@ header nav a:hover {
   display: flex;
 }
 
-.text {
-  font-family: 'Playfair Display', serif;
-  font-size: 70px;
-  font-style: italic;
-}
-
-.star {
-  position: absolute;
-  right: -20px;
-  top: 60px;
-  font-size: 28px;
-}
-
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: #eee;
-  margin-top: 1px;
-}
-
 header nav {
   display: flex;
-  gap: 70px;
+  gap: 60px;
 }
 
 
 header nav a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
   text-decoration: none;
@@ -78,19 +59,13 @@ header nav a {
 }
 
 .logo img {
-  width: 20px;
-  height: 20px;
-}
-
-.logo h1 {
-  font-size: 35px;
+  width: 220px;
+  height: 125px;
 }
 
 main {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
   display: flex;
+  padding: 30px 50px;
 }
 
 #primeira-secao-noticias {
