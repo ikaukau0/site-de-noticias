@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: poppins;
@@ -9,15 +9,15 @@
 
 
 header {
-    font-size: 30px;
-    background-color: rgb(78, 0, 78);
-    color: white;
-     display: flex;
-    height: 140px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right:50px;
+  font-size: 30px;
+  background-color: rgb(78, 0, 78);
+  color: white;
+  display: flex;
+  height: 140px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 header nav a:first-child {
@@ -25,18 +25,34 @@ header nav a:first-child {
 }
 
 header nav a:hover {
-    color: #999999;
-    transition: 0.3s;
+  color: #999999;
+  transition: 0.3s;
 }
 
 .logo {
-    display: flex;
-
+  position: relative;
+  color: #eee;
+  display: flex;
 }
 
-.logo img {
-     max-width: 15px;
-     max-height: 15px;
+.text {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-style: italic;
+}
+
+.star {
+  position: absolute;
+  right: -20px;
+  top: 60px;
+  font-size: 28px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  margin-top: 1px;
 }
 
 header nav {
@@ -53,56 +69,174 @@ header nav a {
 }
 
 .icones-header {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .icones-header img {
-  width: 30px;
+  height: 28px;
+}
+
+.logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo h1 {
+  font-size: 35px;
+}
+
+main {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+
+#primeira-secao-noticias {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secao-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secao-2 img {
+  height: 130px;
+  border-radius: 20px;
+}
+
+main section:first-child {
+  width: 60%;
+  padding-right: 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-child(2) {
+  width: 20%;
+  padding: 0 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-child(3) {
+  width: 20%;
+  padding: 0 50px;
+}
+
+.btn-saiba-mais {
+  margin-top: 30px;
+}
+
+.margin-alinhar img {
+  margin-top: 22px;
+}
+
+.cor-roxa {
+  color: #5D043F;
+}
+
+.noticia-principal h2 {
+  background-color: #5d043f39;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #5D043F;
+  width: 500px;
+  height: 180px;
+}
+
+.noticia-grupo-1 p {
+  margin-right: 20px;
+}
+
+.noticia-principal {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.noticia-principal ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.noticia-principal ul li {
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.noticia-principal ul li::marker {
+  color: #ff0000;
 }
 
 
-
-.h1 {
-    font-family: momo+signature;
-    color: rgb(255, 255, 255);
+.cor-vermelha {
+  color: rgb(254, 0, 0);
 }
 
-#cor-vermelha {
-    color: rgb(254, 0, 0);
-    
-}
-#cor-roxa {
-    color: rgb(45, 0, 45);
-}
-#cor-yellow {
-    color: yellow;
-}
-#cor-verde {
-    color: green;
-}
-#cor-azul {
-    color: blue;
-}
-#cor-azescuro {
-    color: rgb(12, 12, 107);
-}
-#cor-marrom {
-    color: rgb(59, 18, 0);
+.cor-roxa {
+  color: rgb(45, 0, 45);
 }
 
-#button {
-    background-color: brown;
-    border-radius: 10px;
-    width: 303px;
-    height: 61px;
-    border: none;
-    color: white;
+.cor-yellow {
+  color: yellow;
+}
+
+.cor-verde {
+  color: green;
+}
+
+.cor-azul {
+  color: blue;
+}
+
+.cor-azescuro {
+  color: rgb(12, 12, 107);
+}
+
+.cor-marrom {
+  color: rgb(59, 18, 0);
+}
+
+.btn-saiba-mais {
+  background-color: #c90303;
+  color: white;
+  border: none;
+  padding: 6px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 footer {
-    background-color: rgb(78, 0, 78) ;
-    color: white;
-    font-style: oblique;
-    height: 100px;
+  background-color: rgb(78, 0, 78);
+  color: white;
+  font-style: oblique;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+#primeira-secao-noticias article img {
+  width: 130px;
+  border-radius: 20px;
+  font-size: 2px;
+}
+
+#primeira-secao-noticias article {
+  font-size: 14px;
+}
+
+/* ESTILOS PARA SEGUNDA SEÇÃO */
+main section:nth-child(2) article {
+  width: 100%;
+}
+
+main section:nth-child(3) article {
+  width: 100%;
 }
