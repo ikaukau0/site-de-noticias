@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+
+
+header {
+  font-size: 30px;
+  background-color: rgb(78, 0, 78);
+  color: white;
+  display: flex;
+  height: 140px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header nav a:nth-child(4) {
+  color: #999999;
+}
+
+header nav a:hover {
+  color: #999999;
+  transition: 0.3s;
+}
+
+.logo {
+  position: relative;
+  color: #eee;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  gap: 60px;
+}
+
+
+header nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.icones-header {
+  display: flex;
+  gap: 20px;
+}
+.icones-header img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.icones-header a {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.icones-header img {
+  height: 28px;
+}
+
+main {
+  display: flex;
+  padding: 30px 50px;
+}
+
+
+/* TITULOS */
+.titulo-1 {
+  color: #981B1B;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  cursor: pointer;
+
+}
+
+.titulo-1 :hover {
+  transition: 0.3s;
+  color: #ff0000;
+}
+
+.titulo-2 {
+  color: #898D15;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.titulo-2 :hover {
+  transition: 0.3s;
+  color: #f2ff00;
+}
+
+/* img sessão tricolor */
+
+.sessao-tricolor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.sessao-tricolor article {
+  cursor: pointer;
+}
+
+.sessao-tricolor article:hover{
+  transform: scale(1.1);
+  transition: 0.6s;
+  color: #ff0000;
+}
+
+.sessao-tricolor img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+.sessao-tricolor h3 {
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    #FF0000 0%,
+    #000000 84%,
+    #FFFFFF 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.sessao-tricolor p {
+  font-size: 15px;
+}
+/* img sessão copa */
+.sessao-copa {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.sessao-copa article {
+  cursor: pointer;
+}
+
+.sessao-copa article:hover{
+  transform: scale(1.1);
+  transition: 0.6s;
+  color: #507dad;
+}
+
+.sessao-copa img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+.sessao-copa h3 {
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    #D9FF00 0%,
+    #227AFF 15%,
+    #05961D 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.sessao-copa p {
+  font-size: 15px;
+}
+/* footer */
+footer {
+  position: relative; /* referência para a imagem */
+  background-color: rgb(78, 0, 78);
+  color: white;
+  padding: 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .news-header {
+  position: absolute;
+  right: 20px;
+  width: 250px;
+}
+
+footer p {
+  position: absolute;
+  left: 20px;
+  font-size: 8px;
+}
+
+.logos-footer{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logos-footer :hover{
+  transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  .icones-header img {
+    height: 24px;
+  }
+
+  /* TITULOS */
+  .titulo-1 h1,
+  .titulo-2 h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* SESSÃO TRICOLOR */
+  .sessao-tricolor {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .sessao-tricolor article {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .sessao-tricolor img {
+    width: 100%;
+  }
+
+  .sessao-tricolor h3 {
+    font-size: 18px;
+  }
+
+  .sessao-tricolor p {
+    font-size: 14px;
+  }
+
+  /* SESSÃO COPA */
+  .sessao-copa {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .sessao-copa article {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .sessao-copa img {
+    width: 100%;
+  }
+
+  .sessao-copa h3 {
+    font-size: 18px;
+  }
+
+  .sessao-copa p {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  footer .news-header {
+    position: static;
+    width: 180px;
+  }
+
+  footer p {
+    position: static;
+    font-size: 9px;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+
+  header nav {
+    gap: 30px;
+  }
+
+  .sessao-tricolor,
+  .sessao-copa {
+    flex-wrap: wrap;
+  }
+
+  .sessao-tricolor article,
+  .sessao-copa article {
+    max-width: 220px;
+  }
+
+  .sessao-tricolor img,
+  .sessao-copa img {
+    width: 100%;
+  }
+}

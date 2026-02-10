@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+
+
+/* header */
+/*ajuste p header ocupar as 3 colunas */
+
+header {
+  font-size: 30px;
+  background-color: rgb(78, 0, 78);
+  color: white;
+  display: flex;
+  height: 140px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-column: 1 / 4;
+}
+
+header nav a:nth-child(2) {
+  color: #999999;
+}
+
+header nav a:hover {
+  color: #999999;
+  transition: 0.3s;
+}
+
+.logo {
+  position: relative;
+  color: #eee;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  gap: 60px;
+}
+
+
+header nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.icones-header {
+  display: flex;
+  gap: 20px;
+}
+.icones-header img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.icones-header a {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.icones-header img {
+  height: 28px;
+}
+
+main {
+  display: flex;
+  padding: 30px 50px;
+}
+
+/* corpo */
+/* faz o layout geral em 3 colunas */
+body {
+  background-color: #f6f0f4;
+  grid-template-columns: 1fr 1fr 0.8fr; /* 3 colunas */
+  gap: 30px;
+}
+
+/* titutlo principal */
+
+h1 {
+  color: #130267;
+  padding: 20px;
+  padding-left: 150px;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo-principal{
+  width: 100%;
+  cursor: pointer;
+}
+
+.titulo-principal h1:hover{
+  transition: 0.3s;
+  color: #1b4dd8;
+}
+.noticias{
+  display: flex;
+}
+/* formatar seções */
+.seção-1 {
+  grid-column: 1 / 2;
+}
+
+.seção-2 {
+  grid-column: 2 / 3;
+}
+
+/* seção-1 duas noticias */
+
+.noticias-principais {
+  display: flex;
+  gap: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.noticia-grande {
+  background-color: #efe6eb;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.noticia-grande:hover{
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+.noticia-grande img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.noticia-grande h3 {
+  font-size: 20px;
+  font-weight: 650;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.noticia-grande p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* seção-2 noticias pequenas na direita */
+
+.bit-news {
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.bit-news article {
+  background-color: #efe6eb;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.bit-news article:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+.bit-news img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.bit-news h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.bit-news p {
+  font-size: 8px;
+}
+
+
+
+
+
+/* footer */
+footer {
+  position: relative; /* referência para a imagem */
+  background-color: rgb(78, 0, 78);
+  color: white;
+  padding: 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .news-header {
+  position: absolute;
+  right: 20px;
+  width: 250px;
+}
+
+footer p {
+  position: absolute;
+  left: 20px;
+  font-size: 8px;
+}
+
+.logos-footer{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logos-footer :hover{
+  transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  .icones-header img {
+    height: 24px;
+  }
+
+  /* TÍTULO PRINCIPAL */
+  .titulo-principal h1 {
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* CONTAINER GERAL */
+  .noticias {
+    flex-direction: column;
+  }
+
+  /* NOTÍCIAS GRANDES */
+  .noticias-principais {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .noticia-grande {
+    padding: 15px;
+  }
+
+  .noticia-grande img {
+    height: 180px;
+  }
+
+  .noticia-grande h3 {
+    font-size: 18px;
+  }
+
+  .noticia-grande p {
+    font-size: 15px;
+  }
+
+  /* BIT NEWS (LATERAL) */
+  .bit-news {
+    padding: 20px;
+  }
+
+  .bit-news article {
+    text-align: center;
+  }
+
+  .bit-news h3 {
+    font-size: 14px;
+  }
+
+  .bit-news p {
+    font-size: 12px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  footer .news-header {
+    position: static;
+    width: 180px;
+  }
+
+  footer p {
+    position: static;
+    font-size: 9px;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+
+  header nav {
+    gap: 30px;
+  }
+
+  .noticias {
+    flex-direction: column;
+  }
+
+  .noticias-principais {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .noticia-grande {
+    max-width: 420px;
+  }
+
+  .bit-news {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bit-news article {
+    max-width: 220px;
+  }
+}

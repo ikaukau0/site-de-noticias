@@ -53,7 +53,16 @@ header nav a {
   display: flex;
   gap: 20px;
 }
+.icones-header img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
 
+.icones-header a {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
 .icones-header img {
   height: 28px;
 }
@@ -71,6 +80,12 @@ main {
 #primeira-secao-noticias {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+#primeira-secao-noticias article:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
 }
 
 .secao-2 {
@@ -128,6 +143,13 @@ main section:nth-child(3) {
 .noticia-principal {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.noticia-principal :hover{
+  transition: 0.1s;
+  transform: scale(1.1);
+  font-weight: 500;
 }
 
 .noticia-principal ul {
@@ -185,17 +207,12 @@ main section:nth-child(3) {
   font-weight: 600;
 }
 
-footer {
-  background-color: rgb(78, 0, 78);
-  color: white;
-  font-style: oblique;
-  padding: 20px;
-  text-align: center;
-  align-items: center;
-  height: 90px;
-  display: flex;
-  justify-content: center;
+.btn-saiba-mais:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
+  color: rgb(255, 0, 0);
 }
+
 
 #primeira-secao-noticias article img {
   width: 130px;
@@ -212,19 +229,172 @@ main section:nth-child(2) article {
   width: 100%;
 }
 
+main section:nth-child(2) article:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
+  font-weight: 500;
+  cursor: pointer;
+}
+
 main section:nth-child(3) article {
   width: 100%;
 }
 
-/* dekstop view */
-@media (min-width: 1025px) {
-    .photo {
-        width: 367px;
-        height: 684px;
-    }
-
-    .navbar {
-        width: 400px;
-        margin: 0 auto;
-    }
+main section:nth-child(3) article:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
+  font-weight: 500;
+  cursor: pointer;
 }
+
+
+
+/* footer */
+footer {
+  position: relative; /* referência para a imagem */
+  background-color: rgb(78, 0, 78);
+  color: white;
+  padding: 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .news-header {
+  position: absolute;
+  right: 20px;
+  width: 250px;
+}
+
+footer p {
+  position: absolute;
+  left: 20px;
+  font-size: 8px;
+}
+
+.logos-footer{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logos-footer :hover{
+  transform: scale(1.1);
+}
+/* Responsividade TABLET E MOBILE*/
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  main section {
+    width: 100% !important;
+    padding: 20px 0 !important;
+    border: none !important;
+  }
+
+  #primeira-secao-noticias {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #primeira-secao-noticias article {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 20px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  header nav a {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  /* MAIN */
+  main {
+    padding: 15px;
+  }
+
+  .noticia-principal h2 {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  .noticia-principal ul li {
+    font-size: 14px;
+  }
+
+  #primeira-secao-noticias {
+    flex-direction: column;
+  }
+
+  #primeira-secao-noticias article {
+    width: 100%;
+  }
+
+  #primeira-secao-noticias article img {
+    width: 100%;
+  }
+
+  .secao-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .secao-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* REMOVE SCALE NO MOBILE */
+  article:hover,
+  .noticia-principal:hover {
+    transform: none !important;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  footer .news-header {
+    position: static;
+    width: 180px;
+  }
+
+  footer p {
+    position: static;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .logos-footer {
+    gap: 15px;
+  }
+}
+
